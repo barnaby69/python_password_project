@@ -25,7 +25,7 @@ else:
     greeting = "Good evening"
 # system greets the user
 print(greeting, "\n")
-print("Welcome python password generator", "\n")
+print("Welcome to python password generator", "\n")
 # password type from user
 normal = string.ascii_letters + string.digits + string.punctuation
 num_only = string.digits
