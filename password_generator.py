@@ -67,7 +67,7 @@ password_for = input("What is the password for? ")
 
 # desplaying the password and printing it to a .txt file named passowords:
 
-with open("passwords.txt", "w") as external_file:
+with open("passwords.txt", "a") as external_file:
     print("\n", current_date, current_time, password_for, password, file=external_file)
     external_file.close()
 
