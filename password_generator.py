@@ -17,7 +17,7 @@ day = now.strftime("%A")
 
 # 24 h format time:
 
-current_time = now.strftime("%D:%M:%S")
+current_time = now.strftime("%H:%M:%S")
 
 # date in abrivated month format:
 
