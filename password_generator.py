@@ -15,6 +15,14 @@ year = now.year
 d = datetime.date(now)
 day = now.strftime("%A")
 
+# 24 h format time:
+
+current_time = now.strftime("%D:%M:%S")
+
+# date in abrivated month format:
+
+current_date = now.strftime("%d %b %Y")
+
 # checking the time of day
 
 if hour < 12:
@@ -53,7 +61,15 @@ print(" ")
 
 password = "".join(secrets.choice(password_type[password_id]) for i in range(length))  # i is a temp variable
 
-# desplaying the password:
+# naming what the password is for
+
+password_for = input("What is the password for? ")
+
+# desplaying the password and printing it to a .txt file named passowords:
+
+with open("passwords.txt", "w") as external_file:
+    print("\n", current_date, current_time, password_for, password, file=external_file)
+    external_file.close()
 
 print("Your password is:", password, "\n")
 
